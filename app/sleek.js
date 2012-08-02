@@ -476,7 +476,7 @@ function(Collection, DynamicContainer, Item, List, CardPanel, SlidePanel, Factor
         default:
           return new ImageLoader({
             templateEl: '#template-' + itemType,
-            scroller: true,
+            scroller: false,
             getImageUrl: function () {
               return self.getThumbnail(options.model.toJSON());
             }
