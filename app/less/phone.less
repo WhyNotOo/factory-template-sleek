@@ -1110,6 +1110,7 @@ header {
       input {
         width:99%;
         height:30px;
+        padding-left:5px;
       }
     }
 
@@ -1125,7 +1126,7 @@ header {
       float:right;
       border:1px solid #CCC;
       color:#fff;
-      padding:10px 0 10px 35px;
+      padding:10px 0 10px 30px;
       cursor:pointer;
       font-size:14px;
       font-weight:bold;
@@ -1141,6 +1142,7 @@ header {
     right:0;
     bottom:0;
     background:rgba(50, 50, 50, 0.9);
+    z-index:100;
 
     .cartDetail {
       width:80%;
@@ -1151,6 +1153,7 @@ header {
         margin-bottom:5px;
         background:none;
         padding:0;
+        pointer-events:auto;
 
         img {
           float:left;
