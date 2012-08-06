@@ -38,7 +38,10 @@
         <div class="container">
           <span>&nbsp;</span>
           <div id="toolbar">&nbsp;</div>
-          <h1><span id="title">&nbsp;</span></h1>
+          <h1>
+            <span id="appLogo"></span>
+            <span id="title">&nbsp;</span>
+          </h1>
         </div>
       </header>
       <div id="cards"></div>
@@ -376,6 +379,10 @@
       // For non-Retina iPhone, iPod Touch, and Android 2.1+ devices: (have to be an absolute URL)
       if(Joshfire.factory.config.app.icon) {
         $("head").append('<link rel="apple-touch-icon-precomposed" href="'+ Joshfire.factory.config.app.icon.contentURL +'">')
+      }
+
+      if(Joshfire.factory.config.app.logo.contentURL) {
+        $("#appLogo").css('background-image', 'url('+Joshfire.factory.config.app.logo.contentURL+')');
       }
     </script>
   </body>

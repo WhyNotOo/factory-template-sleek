@@ -235,7 +235,7 @@
     </script>
 
     <script type="text/template" id="template-news">
-      <div class="body">
+      <div class="body clear-fix">
         <% if (item.datePublished || item.uploadDate || item.dateCreated) { %>
         <h3><%= moment(toDate(item.datePublished || item.uploadDate || item.dateCreated)).format('LLLL') %></h3>
         <% } %>

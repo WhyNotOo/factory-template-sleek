@@ -55,19 +55,31 @@ header {
   }
 
   h1 {
+    width:200px;
     font-family: "HelveticaNeue-CondensedBold", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 1.3em;
     text-transform: uppercase;
     line-height: 1em;
     padding: .5em .8em;
     float: left;
+    text-shadow: 0 0 2px rgba(0,0,0,.4);
 
     span {
       display: block;
+      float:left;
       position: relative;
       z-index: 50;
-      text-shadow: 0 0 2px rgba(0,0,0,.4);
+
+      &#appLogo {
+        width:20px;
+        height:20px;
+        margin-right:10px;
+        background:transparent no-repeat center center;
+        background-size:contain;
+      }
     }
+
+
   }
 }
 
@@ -1250,7 +1262,6 @@ header {
   }
 
   .body {
-    height:100%;
     padding: 2.2em 1em 1em;
   }
 }
