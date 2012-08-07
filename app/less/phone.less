@@ -43,7 +43,7 @@ header {
     padding: .4em 0;
 
     span {
-      display: block;
+      display:inline-block;
       // Gradient text only worked on iPhone
       /*.vertical-three-color-gradient(@text-color, .4, @text-color, darken(@text-color, 40%));
       -webkit-background-clip: text;
@@ -51,6 +51,15 @@ header {
       position: relative;
       z-index: 5;
       text-shadow: 0 0 2px rgba(0,0,0,.4);
+
+      &#appLogo {
+        width:20px;
+        height:20px;
+        margin:-5px 10px 0 0;
+        vertical-align: middle;
+        background:transparent no-repeat center center;
+        background-size:contain;
+      }
     }
   }
 
@@ -61,7 +70,7 @@ header {
     top: 0;
     right: 0;
     width: 40%;
-    height: 2.24em;
+    height: 2.2em;
     z-index: 32;
 
     @color: desaturate(lighten(@background-color, 30%), 10%);

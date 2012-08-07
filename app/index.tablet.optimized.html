@@ -150,6 +150,8 @@
             <div>
               <% if (item.image && item.image.contentURL) { %>
                 <span class="thumbnail" style="background-image:url(<%= item.image.contentURL %>)"></span>
+              <% } else { %>
+                <span class="thumbnail" style="background-image:url('images/noimage.png')"></span>
               <% } %>
               <% if (item.datePublished || item.uploadDate || item.dateCreated) { %>
               <h3>
@@ -233,7 +235,7 @@
     </script>
 
     <script type="text/template" id="template-news">
-      <div class="body">
+      <div class="body clear-fix">
         <% if (item.datePublished || item.uploadDate || item.dateCreated) { %>
         <h3><%= moment(toDate(item.datePublished || item.uploadDate || item.dateCreated)).format('LLLL') %></h3>
         <% } %>

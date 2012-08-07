@@ -35,7 +35,10 @@
   <body class="device-phone" ontouchmove="event.preventDefault()">
     <div id="container">
       <header>
-        <h1><span id="title">&nbsp;</span></h1>
+        <h1>
+          <span id="appLogo"></span>
+          <span id="title">&nbsp;</span>
+        </h1>
         <span>&nbsp;</span>
         <a href="#" id="back">Back</a>
         <a href="#" id="refresh">Refresh</a>
@@ -150,6 +153,8 @@
             <div>
               <% if (item.image && item.image.contentURL) { %>
                 <span class="thumbnail" style="background-image:url(<%= item.image.contentURL %>)"></span>
+              <% } else { %>
+                <span class="thumbnail" style="background-image:url('images/noimage.png')"></span>
               <% } %>
               <% if (item.datePublished || item.uploadDate || item.dateCreated) { %>
               <h3>
@@ -374,6 +379,10 @@
       // For non-Retina iPhone, iPod Touch, and Android 2.1+ devices: (have to be an absolute URL)
       if(Joshfire.factory.config.app.icon) {
         $("head").append('<link rel="apple-touch-icon-precomposed" href="'+ Joshfire.factory.config.app.icon.contentURL +'">')
+      }
+
+      if(Joshfire.factory.config.app.logo.contentURL) {
+        $("#appLogo").css('background-image', 'url('+Joshfire.factory.config.app.logo.contentURL+')');
       }
     </script>
   </body>
