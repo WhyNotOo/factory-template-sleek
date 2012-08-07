@@ -204,8 +204,4 @@ function(Sleek, Layout, $, _) {
       return controllers;
     }
   });
-
-  $('h1 #appLogo').css('background-image', Joshfire.config.app.logo);
-  console.log($('h1 #appLogo'));
-
 });
