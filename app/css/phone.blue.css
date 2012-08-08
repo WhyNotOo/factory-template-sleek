@@ -143,6 +143,7 @@ div.ps-toolbar-play div.ps-toolbar-content{background-position:-88px 0;}
 #video .detail img{width:100%;height:auto;}
 #video .detail .media{background:#000;}
 #video .detail .media div,#video .detail .media iframe,#video .detail .media video{margin:0 auto;}
+#video .detail .media iframe{max-width:100%;}
 #video .detail .body{padding:1.2em 1em 1em;background:#ffffff url(../images/phone-shadow.png) no-repeat center top;background-size:100% auto;}
 #video .detail h3{font-weight:normal;font-size:1em;margin-bottom:.8em;margin-top:1em;}
 #video .detail h4{text-transform:uppercase;font-family:"HelveticaNeue-CondensedBold","Helvetica Neue",Helvetica,Arial,sans-serif;font-size:1.2em;margin-bottom:1em;color:#1c3953;}

@@ -29,7 +29,7 @@
     <script type="text/javascript" src="vendor/moment.js"></script>
     <script type="text/javascript" src="vendor/sidjs-0.1.js"></script>
     <script type="text/javascript" src="prettystatus.js"></script>
-    <script data-joshfire-bootstrap src="http://preview.joshfireapps.com/bootstrap/501a51b8753e8b0200006459/auto/phone/"></script>
+    <script data-joshfire-bootstrap src="http://preview.joshfireapps.com/bootstrap/502126b8e08cf502000047db/auto/phone/"></script>
   </head>
 
   <body class="device-phone" ontouchmove="event.preventDefault()">
@@ -336,10 +336,10 @@
     </script>
 
     <script type="text/template" id="template-video">
-      <div class="media" style="height:<%= media.metadata.height %>px">
-        <%= media.html %>
-      </div>
-      <div class="wrapper" style="height:<%= height - media.metadata.height %>px;position:relative">
+      <div>
+        <div class="media">
+          <%= media.html %>
+        </div>
         <div class="body">
           <% if (item.datePublished || item.uploadDate || item.dateCreated) { %>
           <h3><%= moment(toDate(item.datePublished || item.uploadDate || item.dateCreated)).format('LLLL') %></h3>

@@ -29,7 +29,7 @@
     <script type="text/javascript" src="vendor/moment.js"></script>
     <script type="text/javascript" src="vendor/sidjs-0.1.js"></script>
     <script type="text/javascript" src="prettystatus.js"></script>
-    <script data-joshfire-bootstrap src="http://preview.joshfireapps.com/bootstrap/501a51b8753e8b0200006459/auto/tablet/"></script>
+    <script data-joshfire-bootstrap src="http://preview.joshfireapps.com/bootstrap/502126b8e08cf502000047db/auto/tablet/"></script>
   </head>
 
   <body class="device-phone" ontouchmove="event.preventDefault()">
@@ -386,6 +386,19 @@
       if(Joshfire.factory.config.app.logo.contentURL) {
         $("#appLogo").css('background-image', 'url('+Joshfire.factory.config.app.logo.contentURL+')');
       }
+
+      window.onload = function() {
+        window.setTimeout(function() {
+          var a = document.getElementsByTagName("a");
+          for(var i=0 ; i<a.length ; i++) {
+            a[i].onclick = function() {
+              console.log(this.getAttribute("href"));
+              window.location=this.getAttribute("href");
+              return false;
+            }
+          }
+        }, 2000);
+      };
     </script>
   </body>
 </html>
