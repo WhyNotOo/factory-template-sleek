@@ -60,6 +60,17 @@ function(Sleek, Layout, $, _) {
         className: 'split-view'
       });
 
+      var a = document.getElementsByTagName("a");
+      window.setTimeout(function() {
+        for(var i=0 ; i<a.length ; i++) {
+          a[i].onclick = function() {
+            console.log(this.getAttribute("href"));
+            window.location=this.getAttribute("href");
+            return false;
+          }
+        }
+      }, 2000);
+
       return view;
     },
 

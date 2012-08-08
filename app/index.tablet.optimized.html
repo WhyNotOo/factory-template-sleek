@@ -386,19 +386,6 @@
       if(Joshfire.factory.config.app.logo.contentURL) {
         $("#appLogo").css('background-image', 'url('+Joshfire.factory.config.app.logo.contentURL+')');
       }
-
-      window.onload = function() {
-        window.setTimeout(function() {
-          var a = document.getElementsByTagName("a");
-          for(var i=0 ; i<a.length ; i++) {
-            a[i].onclick = function() {
-              console.log(this.getAttribute("href"));
-              window.location=this.getAttribute("href");
-              return false;
-            }
-          }
-        }, 2000);
-      };
     </script>
   </body>
 </html>
