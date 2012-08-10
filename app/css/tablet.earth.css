@@ -144,7 +144,7 @@ div.ps-toolbar-play div.ps-toolbar-content{background-position:-88px 0;}
 #video .right-panel .play,#video .single .play{height:5em;width:4em;overflow:hidden;position:absolute;top:50%;left:50%;margin-top:-2.5em;-webkit-transform:scalex(1.5);-moz-transform:scalex(1.5);-ms-transform:scalex(1.5);-o-transform:scalex(1.5);transform:scalex(1.5);}#video .right-panel .play span,#video .single .play span{display:block;height:3em;width:3em;margin-left:-1.5em;margin-top:1em;background-color:#fff;-webkit-transform:rotate(45deg);-moz-transform:rotate(45deg);-ms-transform:rotate(45deg);-o-transform:rotate(45deg);transform:rotate(45deg);}
 #video .right-panel img,#video .single img{width:100%;height:auto;}
 #video .right-panel .media,#video .single .media{background-color:black;}
-#video .right-panel .media div,#video .single .media div,#video .right-panel .media iframe,#video .single .media iframe,#video .right-panel .media video,#video .single .media video{margin:0 auto;}
+#video .right-panel .media div,#video .single .media div,#video .right-panel .media iframe,#video .single .media iframe,#video .right-panel .media video,#video .single .media video{margin:0 auto;height:350px;}
 #video .right-panel .body,#video .single .body{padding:1.2em 1em 1em;margin-top:-0.5em;background:transparent url(../images/phone-shadow.png) no-repeat center top;background-size:100% auto;}
 #video .right-panel h3,#video .single h3{font-weight:normal;font-size:1em;margin-bottom:.8em;margin-top:1em;}
 #video .right-panel h4,#video .single h4{text-transform:uppercase;font-family:"HelveticaNeue-CondensedBold","Helvetica Neue",Helvetica,Arial,sans-serif;font-size:1.2em;margin-bottom:1em;color:#873612;}
