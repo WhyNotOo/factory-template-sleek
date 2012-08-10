@@ -57,11 +57,15 @@ function(Sleek, Toolbar, SlidePanel, $, _) {
         className: 'slide-panel'
       });
 
+      var a = document.getElementsByTagName("a");
       window.setTimeout(function() {
-        $("a").click(function (event) {
-          event.preventDefault();
-          window.location = $(this).attr("href");
-        });
+        for(var i = 0, len = a.length ; i < len ; i++) {
+          a[i].onclick = function() {
+            console.log(this.getAttribute("href"));
+            location.href = this.getAttribute("href");
+            return false;
+          }
+        }
       }, 1000);
 
       return view;

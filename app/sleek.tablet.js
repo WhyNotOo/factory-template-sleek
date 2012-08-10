@@ -60,22 +60,15 @@ function(Sleek, Layout, $, _) {
         className: 'split-view'
       });
 
-      // Javascript version
-      // var a = document.getElementsByTagName("a");
-      // window.setTimeout(function() {
-      //   for(var i = 0, len = a.length ; i < len ; i++) {
-      //     a[i].onclick = function() {
-      //       window.location = this.getAttribute("href");
-      //       return false;
-      //     }
-      //   }
-      // }, 1000);
-
+      var a = document.getElementsByTagName("a");
       window.setTimeout(function() {
-        $("a").click(function (event) {
-          event.preventDefault();
-          window.location = $(this).attr("href");
-        });
+        for(var i = 0, len = a.length ; i < len ; i++) {
+          a[i].onclick = function() {
+            console.log(this.getAttribute("href"));
+            location.href = this.getAttribute("href");
+            return false;
+          }
+        }
       }, 1000);
 
       return view;
